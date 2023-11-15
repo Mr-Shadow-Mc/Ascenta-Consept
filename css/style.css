@@ -1,7 +1,14 @@
+*
+{
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     height: 100vh;
 }
+
+/*INTRO TRANSITION*/
 
 #intro
 {
@@ -23,29 +30,51 @@ body {
     transform: translateY(-50%);
 }
 
-@keyframes fadeInOpacity {
-	0% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
-}
 
-#main
+/*BODY*/
+
+#header-wrapper
 {
-    background-color: red;
-    color: red;
+    height: 64px;
     width: 100%;
-    height: 100%;
+    display: flex;
+    position: fixed;
+    background-color: rgba(0,0,0,.45);
+    backdrop-filter: blur(46px);
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    will-change: auto;
+    transition: all ease .4s;
+    transform: translateY(0px);
 }
 
-.hidden {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s 2s, opacity 2s linear;
-    animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 2s;
+#bg
+{
+    background-image: url("./../assets/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.global-header {
+    position: relative;
+    margin-bottom: -1px;
+    height: 1px;
+    z-index: 3;
+    transition: ease .3s;
+}
+
+.middle-panel>img
+{
+    height: 50px;
+    width: 50px;
+}
+
+.left-panel
+{
+    padding-left: 15px;
 }
