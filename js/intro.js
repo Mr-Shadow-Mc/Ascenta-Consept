@@ -6,4 +6,5 @@ window.addEventListener('DOMContentLoaded', function()
     intro.style.opacity = "0";
     introLogo.style.opacity = "0";
     intro.addEventListener('transitionend', () => intro.remove());
+    introLogo.addEventListener('transitionend', () => intro.remove());
 })
