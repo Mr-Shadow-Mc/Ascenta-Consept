@@ -223,7 +223,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-content: center;
+    align-content: stretch;
     justify-content: space-around;
 }
 
@@ -232,13 +232,20 @@ footer {
     border-bottom: 1px solid #303030;
 }
 
+.ressources>span {
+    font-size: 1.4rem;
+}
+
 .ressources>ul {
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
+    width: max-content;
+    padding: 0;
 }
 
 .ressources>ul li {
     list-style: none;
     width: 200px;
+    padding: 10px 0;
 }
 
 .reseaux-sociaux {
