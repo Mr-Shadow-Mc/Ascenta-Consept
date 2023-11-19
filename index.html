@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
@@ -13,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/620fc58eba.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -24,8 +22,11 @@
 
     <header class="global-header">
         <div id="header-wrapper" class="">
-            <div class="left-panel"><!--<img src="./assets/images/humbergeur_menu.png" alt="" style="height: 40px;">--></div>
-            <div class="middle-panel"><a href="./index.html"><img src="./assets/images/Logo_site_main.png" alt=""></a></div>
+            <div class="left-panel">
+                <!--<img src="./assets/images/humbergeur_menu.png" alt="" style="height: 40px;">-->
+            </div>
+            <div class="middle-panel"><a href="./index.html"><img src="./assets/images/Logo_site_main.png" alt=""></a>
+            </div>
             <div class="right-panel"></div>
         </div>
     </header>
@@ -35,74 +36,104 @@
         <span class="two">2</span>
         <span class="three">3</span>
     </div>
-    
+
     <main>
-        <section class="scroll s-one" data-section-name="s-one">
-			<div class="container">
-				<div class="row">
-                    <div id="bg">
-                        <video autoplay muted loop>
-                            <source src="./assets/videos/production_id_4169986.mp4" type="video/mp4" />
-                        </video>
-                        <h1>"Le debut d'une nouvelle ére</h1>
+        <div class="scroll s-one" data-section-name="s-one">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <video autoplay muted loop class="home_video">
+                                    <source src="./assets/videos/home_1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="swiper-slide">
+                                <video autoplay muted loop class="home_video">
+                                    <source src="./assets/videos/home_2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="swiper-slide">
+                                <video autoplay muted loop class="home_video">
+                                    <source src="./assets/videos/home_3.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="autoplay-progress">
+                            <svg viewBox="0 0 48 48">
+                                <circle cx="24" cy="24" r="20"></circle>
+                            </svg>
+                            <span></span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="scroll s-two" data-section-name="s-two">
-			<div class="container">
-				<div class="row">
+        <div class="scroll s-two" data-section-name="s-two">
+            <div class="container">
+                <div class="row">
                     <div class="presentation-projet">
                         <div class="section-gauche">
 
                         </div><div class="section-droite">
-                        <h2>Notre projet</h2>
-                        <p>
-                        Nunc vero inanes flatus quorundam vile esse quicquid extra urbis pomerium nascitur aestimant
-                        praeter orbos et caelibes, nec credi potest qua obsequiorum diversitate coluntur homines sine
-                        liberis Romae.
+                            <h2>Notre projet</h2>
+                            <p>
+                                Nunc vero inanes flatus quorundam vile esse quicquid extra urbis pomerium nascitur
+                                aestimant
+                                praeter orbos et caelibes, nec credi potest qua obsequiorum diversitate coluntur homines
+                                sine
+                                liberis Romae.
 
-                        Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset insimulatus
-                        fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico urgente
-                        vel nullo, quasi sufficiente hoc solo, quod nominatus esset aut delatus aut postulatus, capite
-                        vel multatione bonorum aut insulari solitudine damnabatur.</p>
+                                Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset
+                                insimulatus
+                                fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico
+                                urgente
+                                vel nullo, quasi sufficiente hoc solo, quod nominatus esset aut delatus aut postulatus,
+                                capite
+                                vel multatione bonorum aut insulari solitudine damnabatur.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="scroll s-three" data-section-name="s-three">
-			<div class="container">
-				<div class="row">
+        <div class="scroll s-three" data-section-name="s-three">
+            <div class="container">
+                <div class="row">
                     <div class="presentation-equipe">
-                        <div><h1>Notre Équipe</h1></div>
+                        <div>
+                            <h1>Notre Équipe</h1>
+                        </div>
                         <div class="membre-wrapper">
 
-                        <div class="membre">
-                        <h2>Nom membre</h2>
-                        <h3>Role.</h3>
-                        </div>
-    
-                        <div class="membre">
-                        <h2>Nom membre</h2>
-                        <h3>Role.</h3>
-                        </div>
-    
-                        <div class="membre">
-                        <h2>Nom membre</h2>
-                        <h3>Role.</h3>
-                        </div>
-    
-                        <div class="membre">
-                        <h2>Nom membre</h2>
-                        <h3>Role.</h3>
+                            <div class="membre">
+                                <h2>Nom membre</h2>
+                                <h3>Role.</h3>
+                            </div>
+
+                            <div class="membre">
+                                <h2>Nom membre</h2>
+                                <h3>Role.</h3>
+                            </div>
+
+                            <div class="membre">
+                                <h2>Nom membre</h2>
+                                <h3>Role.</h3>
+                            </div>
+
+                            <div class="membre">
+                                <h2>Nom membre</h2>
+                                <h3>Role.</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
@@ -116,13 +147,15 @@
         </div>
         <div class="reseaux-sociaux">
             <div class="reseau">
-                <a href="https://instagram.com/ascentaconcept?igshid=OGQ5ZDc2ODk2ZA=="> <i class="fa-brands fa-instagram"></i> Intagram</a>
+                <a href="https://instagram.com/ascentaconcept?igshid=OGQ5ZDc2ODk2ZA=="> <i
+                        class="fa-brands fa-instagram"></i> Intagram</a>
             </div>
             <div class="reseau">
                 <a href=""> <i class="fa-brands fa-x-twitter"></i> Twitter</a>
             </div>
             <div class="reseau">
-                <a href="https://www.tiktok.com/@ascenta.concept?_t=8hOLUxdzRVB&_r=1"> <i class="fa-brands fa-tiktok"></i> TikTok</a>
+                <a href="https://www.tiktok.com/@ascenta.concept?_t=8hOLUxdzRVB&_r=1"> <i
+                        class="fa-brands fa-tiktok"></i> TikTok</a>
             </div>
         </div>
         <div id="copyright">
@@ -132,16 +165,18 @@
     </footer>
 
 
-    <!--    JS SCRIPTS  -->
+    <!--  SCROLL JS SCRIPT  -->
     <script src="./js/intro.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
-		integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="			crossorigin="anonymous"
-		referrerpolicy="no-referrer"
-	></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
+        integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/scroll-section.js"></script>
-    
+
+    <!--    SWIPPER JS SCRIPT-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.4/swiper-bundle.min.js"></script>
+    <script src="./js/swipper.js"></script>
+
 </body>
 
 </html>
