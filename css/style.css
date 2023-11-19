@@ -1,12 +1,20 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Verdana';
 }
 
 body {
     height: 100vh;
     color: rgb(0, 0, 0);
     background-color: #ffffff;
+}
+
+@font-face {
+    font-family: 'MotorOil';
+    src: url('./../assets/fonts/Motor\ Oil.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /*INTRO TRANSITION*/
@@ -235,17 +243,32 @@ body {
 .membre {
     background-image: url("./../assets/images/prototype_solo.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     border-radius: 15px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-    ;
+}
+
+.membre:hover {
+    background-color: rgba(0, 0, 0, 1);
+    background-image: url("./../assets/images/Logo_site_main.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .membre>h2 {
 
     vertical-align: text-bottom;
+    color: white;
 }
+
+.membre>h3 {
+
+    vertical-align: text-bottom;
+    color: white;
+}
+
 
 
 /*  PIED DE PAGE */
@@ -309,4 +332,3 @@ footer {
         display: none;
     }
 }
-
