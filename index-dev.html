@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>La truite</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/620fc58eba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
+
+    <style>
+        * {
+            text-align: center;
+        }
+
+        .header-wrapper {
+            background: rgba(0, 0, 0, 0.40);
+            flex-shrink: 0;
+        }
+
+        .right-panel>nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+        }
+
+        /*  ACCEUIL */
+        .acceuil {
+            height: 100vh;
+            width: 100%;
+        }
+
+        .image-acceuil {
+            height: 100%;
+            width: 100%;
+            background-image: url("./assets/images/bg.jpg");
+            background-position: center;
+            background-size: auto;
+            background-repeat: no-repeat;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .acceuil>h2 {
+            display: inline-block;
+            color: #FFF;
+            text-align: center;
+            text-shadow: 2px 2px 2px #000;
+            font-family: Montserrat;
+            font-size: 31px;
+            font-style: normal;
+            font-weight: 700;
+            word-wrap: break-word;
+        }
+
+        .acceuil>a {
+            display: inline-block;
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 29px;
+            width: 153px;
+            height: 29px;
+            border-radius: 6px;
+            background: #FF5959;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .acceuil>div:nth-child(2) {
+            width: 100%;
+            height: 30%;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.74) 20%, rgba(0, 0, 0, 0) 100%);
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="global-header">
+        <div id="header-wrapper">
+            <div class="left-panel">
+                <a href="./index.html"><img src="./assets/images/Logo_site_main.png" alt="" style="height: 45px;"></a>
+            </div>
+            <div class="right-panel">
+                <nav>
+                    <a href="#">Accueil</a>
+                    <a href="#">à propos</a>
+                    <a href="#">Visuels</a>
+                    <a href="#">Équipe</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="acceuil">
+            <div class="image-acceuil"></div>
+            <div></div>
+            <h2>“Le début d’une nouvelle ère”</h2>
+            <a href="#" class="button">En savoir plus</a>
+        </div>
+
+        <div class="projet">
+
+            <div style="width: 100%; height: 100%; position: relative">
+                <img style="width: 665px; height: 803px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/665x803" />
+                <div style="width: 571px; height: 803px; left: 115px; top: 0px; position: absolute; background: linear-gradient(270deg, white 0%, rgba(217, 217, 217, 0) 100%)"></div>
+            </div>
+
+            <div>
+                <div style="width: 100%; height: 100%; position: relative">
+                    <div style="left: 0px; top: 0px; position: absolute"><span style="color: #FF5959; font-size: 30px; font-family: Montserrat; font-weight: 900; word-wrap: break-word">N</span><span style="color: #252525; font-size: 30px; font-family: Montserrat; font-weight: 900; word-wrap: break-word">otre</span><span style="color: black; font-size: 30px; font-family: Montserrat; font-weight: 900; word-wrap: break-word"> </span><span style="color: #FF5959; font-size: 30px; font-family: Montserrat; font-weight: 900; word-wrap: break-word">P</span><span style="color: #252525; font-size: 30px; font-family: Montserrat; font-weight: 900; word-wrap: break-word">rojet</span></div>
+                    <div style="width: 292px; height: 0px; left: 208px; top: 29px; position: absolute; border: 1px #FF5959 solid"></div>
+                    <div style="width: 500px; height: 329px; left: 0px; top: 62px; position: absolute; color: #252525; font-size: 15px; font-family: Montserrat; font-weight: 500; word-wrap: break-word">Nunc vero inanes flatus quorundam vile esse quicquid extra urbis pomerium nascitur<br/>aestimant<br/>praeter orbos et caelibes, nec credi potest qua obsequiorum diversitate coluntur homines<br/>sine<br/>liberis Romae.<br/><br/>Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset<br/>insimulatus<br/>fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico<br/>urgente<br/>vel nullo, quasi sufficiente hoc solo, quod nominatus esset aut delatus aut postulatus,<br/>capite<br/>vel multatione bonorum aut insulari solitudine damnabatur.</div>
+                </div>
+            </div>
+            
+        </div>
+
+    </main>
+
+    <footer>
+
+
+    </footer>
+
+
+    <!--  SCROLL JS SCRIPT  -->
+    <script src="./js/intro.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
+        integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/scroll-section.js"></script>
+
+    <!--    SWIPPER JS SCRIPT-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.4/swiper-bundle.min.js"></script>
+    <script src="./js/swipper.js"></script>
+
+</body>
+
+</html>
