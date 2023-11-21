@@ -7,20 +7,37 @@
     <title>La truite</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/620fc58eba.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
 
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap');
+
         * {
-            text-align: center;
+            box-sizing: border-box;
+            margin: 0;
+            font-family: 'Verdana';
         }
 
-        .header-wrapper {
-            background: rgba(0, 0, 0, 0.40);
+        #header-wrapper {
+            height: 64px;
+            width: 100%;
+            display: flex;
+            position: fixed;
+            background-color: rgba(0, 0, 0, .45);
+            backdrop-filter: blur(46px);
+            top: 0;
+            left: 0;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            will-change: auto;
+            transition: all ease .4s;
+            transform: translateY(0px);
             flex-shrink: 0;
+            z-index: 4;
         }
 
         .right-panel>nav a {
@@ -48,7 +65,7 @@
             right: 0;
         }
 
-        .acceuil>h2 {
+        .acceuil>div:nth-child(2) h2 {
             display: inline-block;
             color: #FFF;
             text-align: center;
@@ -60,7 +77,7 @@
             word-wrap: break-word;
         }
 
-        .acceuil>a {
+        .button {
             display: inline-block;
             color: #FFF;
             font-family: Montserrat;
@@ -76,12 +93,123 @@
             text-decoration: none;
         }
 
-        .acceuil>div:nth-child(2) {
+        .acceuil>div:last-child {
             width: 100%;
             height: 30%;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.74) 20%, rgba(0, 0, 0, 0) 100%);
             position: absolute;
             bottom: 0;
+            z-index: -1;
+        }
+
+        .acceuil>div:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            height: 100%;
+            position: relative;
+            bottom: 33px;
+        }
+
+        /*   PROJET   */
+
+        .projet {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .section-gauche {
+            width: 50%;
+            height: inherit;
+            text-align: left;
+            background-image: url("./assets/images/Illustration_sans_titre\ 1.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+        }
+
+        .section-gauche>div {
+            height: 100%;
+            width: 70%;
+            position: absolute;
+            right: 0;
+            background: linear-gradient(266deg, #FFF 9.66%, rgba(217, 217, 217, 0.00) 94.14%);
+        }
+
+        .section-droite {
+            width: 30%;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            margin-left: 50px;
+        }
+
+        .section-droite>div:first-child {
+            display: flex;
+            width: 100%;
+            align-items: flex-end;
+            margin-bottom: 30px;
+        }
+
+        .section-droite>div:first-child h1 {
+            color: #252525;
+            font-family: Montserrat;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+        }
+
+        .section-droite>div:first-child span {
+            color: #FF5959;
+            font-family: Montserrat;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+        }
+
+        .effet {
+            background: linear-gradient(180deg, #FF5959 0%, rgba(255, 89, 89, 0.00) 100%);
+            width: 50%;
+            height: 1px;
+        }
+
+        /*   VISUEL DU PROJET   */
+        .visuel-projet {
+            height: 100vh;
+            width: 100%;
+        }
+
+        .visuel-projet>div:first-child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .visuel-projet>div:first-child>div:first-child
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .visuel-projet>div:first-child>div:first-child>h1
+        {
+            margin-bottom: 10px;
+        }
+
+        .visuel-projet>div:first-child>div:first-child>div:last-child
+        {
+            margin-bottom: 10px;
+            width: 100%;
         }
     </style>
 </head>
@@ -107,26 +235,57 @@
     <main>
         <div class="acceuil">
             <div class="image-acceuil"></div>
+            <div>
+                <h2>“Le début d’une nouvelle ère”</h2>
+                <a href="#" class="button">En savoir plus</a>
+            </div>
             <div></div>
-            <h2>“Le début d’une nouvelle ère”</h2>
-            <a href="#" class="button">En savoir plus</a>
+
+
         </div>
 
         <div class="projet">
 
-            <div style="width: 100%; height: 100%; position: relative">
-                <img style="width: 665px; height: 803px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/665x803" />
-                <div style="width: 571px; height: 803px; left: 115px; top: 0px; position: absolute; background: linear-gradient(270deg, white 0%, rgba(217, 217, 217, 0) 100%)"></div>
-            </div>
+            <div class="section-gauche">
+                <div>
 
-            <div>
-                <div style="width: 100%; height: 100%; position: relative">
-                    <div style="left: 0px; top: 0px; position: absolute"><span style="color: #FF5959; font-size: 30px; font-family: Montserrat; font-weight: 900; word-wrap: break-word">N</span><span style="color: #252525; font-size: 30px; font-family: Montserrat; font-weight: 900; word-wrap: break-word">otre</span><span style="color: black; font-size: 30px; font-family: Montserrat; font-weight: 900; word-wrap: break-word"> </span><span style="color: #FF5959; font-size: 30px; font-family: Montserrat; font-weight: 900; word-wrap: break-word">P</span><span style="color: #252525; font-size: 30px; font-family: Montserrat; font-weight: 900; word-wrap: break-word">rojet</span></div>
-                    <div style="width: 292px; height: 0px; left: 208px; top: 29px; position: absolute; border: 1px #FF5959 solid"></div>
-                    <div style="width: 500px; height: 329px; left: 0px; top: 62px; position: absolute; color: #252525; font-size: 15px; font-family: Montserrat; font-weight: 500; word-wrap: break-word">Nunc vero inanes flatus quorundam vile esse quicquid extra urbis pomerium nascitur<br/>aestimant<br/>praeter orbos et caelibes, nec credi potest qua obsequiorum diversitate coluntur homines<br/>sine<br/>liberis Romae.<br/><br/>Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset<br/>insimulatus<br/>fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico<br/>urgente<br/>vel nullo, quasi sufficiente hoc solo, quod nominatus esset aut delatus aut postulatus,<br/>capite<br/>vel multatione bonorum aut insulari solitudine damnabatur.</div>
                 </div>
             </div>
-            
+            <div class="section-droite">
+                <div>
+                    <h1><span>N</span>otre <span>P</span>rojet</h1>
+                    <div class="effet"></div>
+                </div>
+                <p>
+                    Nunc vero inanes flatus quorundam vile esse quicquid extra urbis pomerium
+                    nascitur<br />aestimant<br />praeter orbos et caelibes, nec credi potest qua obsequiorum diversitate
+                    coluntur homines<br />sine<br />liberis Romae.<br /><br />Siquis enim militarium vel honoratorum aut
+                    nobilis inter suos rumore tenus esset<br />insimulatus<br />fovisse partes hostiles, iniecto onere
+                    catenarum in modum beluae trahebatur et inimico<br />urgente<br />vel nullo, quasi sufficiente hoc
+                    solo, quod nominatus esset aut delatus aut postulatus,<br />capite<br />vel multatione bonorum aut
+                    insulari solitudine damnabatur.
+                </p>
+
+                <a href="#" class="button" style="margin-top: 30px;">Découvrir l’équipe</a>
+
+            </div>
+
+        </div>
+
+        <div class="visuel-projet">
+            <div>
+                <div>
+                    <h1><span>V</span>isuelle du <span>P</span>rojet</h1>
+                    <div class="effet"></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <a href="#" class="button">En savoir plus</a>
+            </div>
         </div>
 
     </main>
