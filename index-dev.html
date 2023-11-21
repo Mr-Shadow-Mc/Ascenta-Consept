@@ -167,7 +167,7 @@
             line-height: normal;
         }
 
-        .section-droite>div:first-child span {
+        span {
             color: #FF5959;
             font-family: Montserrat;
             font-size: 30px;
@@ -184,31 +184,111 @@
 
         /*   VISUEL DU PROJET   */
         .visuel-projet {
-            height: 100vh;
+            height: max-content;
             width: 100%;
+            overflow: hidden;
         }
 
         .visuel-projet>div:first-child {
+            margin-top: 70px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        .visuel-projet>div:first-child>div:first-child
-        {
+        .visuel-projet>div:first-child>div:first-child {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        .visuel-projet>div:first-child>div:first-child>h1
-        {
+        .visuel-projet>div:first-child>div:first-child>h1 {
             margin-bottom: 10px;
         }
 
-        .visuel-projet>div:first-child>div:first-child>div:last-child
-        {
+        .visuel-projet>div:first-child>div:first-child>div:last-child {
             margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .projet-card {
+            display: flex;
+            width: 80%;
+            justify-content: space-evenly;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .projet-card div {
+            width: 250px;
+            height: 250px;
+            background: rgba(255, 89, 89, 0.46);
+            border-radius: 22px;
+        }
+
+        /*   NOTRE-EQUIPE   */
+        .notre-equipe>div:first-child {
+            margin-top: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .notre-equipe>div:first-child>div:first-child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .membre {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 100%;
+            flex-wrap: wrap;
+        }
+
+        .membre>div {
+            display: flex;
+            flex-direction: column-reverse;
+            background: #FFC9C9;
+            box-shadow: 0px 10px 0px rgba(255, 201, 201, 0.25);
+            border-radius: 24px;
+            height: 326px;
+            width: 271px;
+            margin: 11px 11px;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .membre>div>img {
+            width: 271px;
+            height: 219px;
+        }
+
+        .membre-info {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .equipe-wrapper>div>h1 {
+            margin-bottom: 10px;
+        }
+
+        .equipe-wrapper>div>p {
+            margin-top: 10px;
+            margin-bottom: 30px;
+            color: #FF5959;
+            font-size: 24px;
+            font-family: Montserrat;
+            font-style: italic;
+            font-weight: 400;
+            word-wrap: break-word
+        }
+
+        .equipe-wrapper>div .effet {
             width: 100%;
         }
     </style>
@@ -278,15 +358,62 @@
                     <h1><span>V</span>isuelle du <span>P</span>rojet</h1>
                     <div class="effet"></div>
                 </div>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="projet-card">
+                    <div><img style="width: 100%; height: 100%; border-radius: 22px"
+                            src="./assets/images/Illustration.png" /></div>
+                    <div><img style="width: 100%; height: 100%; border-radius: 22px"
+                            src="./assets/images/Illustration.png" /></div>
+                    <div><img style="width: 100%; height: 100%; border-radius: 22px"
+                            src="./assets/images/Illustration.png" /></div>
+                    <div><img style="width: 100%; height: 100%; border-radius: 22px"
+                            src="./assets/images/Illustration.png" /></div>
                 </div>
-                <a href="#" class="button">En savoir plus</a>
+                <a href="#" class="button">Découvrir</a>
+            </div>
+
+            <div class="notre-equipe">
+                <div class="equipe-wrapper">
+                    <div>
+                        <h1><span>N</span>otre <span>É</span>quipe</h1>
+                        <div class="effet"></div>
+                        <p>"citation de l'equipe"</p>
+                    </div>
+                    <div class="membre">
+                        <div>
+                            <div class="membre-info">
+                                <h3><span>R</span>omain <span>G</span>rosjean</h3>
+                                <p>role</p>
+                            </div>
+
+                            <img style="border-radius: 22px" src="https://via.placeholder.com/271x219" />
+                        </div>
+                        <div>
+                            <div class="membre-info">
+                                <h3><span>R</span>omain <span>G</span>rosjean</h3>
+                                <p>role</p>
+                            </div>
+                            <img style="border-radius: 22px" src="https://via.placeholder.com/271x219" />
+                        </div>
+                        <div>
+                            <div class="membre-info">
+                                <h3><span>R</span>omain <span>G</span>rosjean</h3>
+                                <p>role</p>
+                            </div>
+                            <img style="border-radius: 22px" src="https://via.placeholder.com/271x219" />
+                        </div>
+                        <div>
+                            <div class="membre-info">
+                                <h3><span>R</span>omain <span>G</span>rosjean</h3>
+                                <p>role</p>
+                            </div>
+                            <img style="border-radius: 22px" src="https://via.placeholder.com/271x219" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+
 
     </main>
 
