@@ -45,13 +45,23 @@
     transition: all ease .4s;
     transform: translateY(0px);
     flex-shrink: 0;
-    z-index: 4;
+    z-index: 6;
 }
 
 .right-panel>nav a {
     text-decoration: none;
     color: white;
     margin: 0 10px;
+}
+
+.right-panel>i
+{
+    display: none;
+}
+
+.left-panel>a>img
+{
+    height: 45px;
 }
 
 /*  ACCEUIL */
@@ -518,8 +528,28 @@ footer>div:first-child>div {
         margin: 0 10px;
     }
 
-    .right-panel {
+    .left-panel
+    {
+        padding-left: 20px;
+    }
+
+    .left-panel>a>img
+    {
+        width: 50px;
+        height: 55px;
+    }
+
+    .right-panel
+    {
+        padding-right: 20px;
+    }
+
+    .right-panel>nav {
         display: none;
+    }
+    .right-panel>i {
+        display: contents;
+        font-size: -webkit-xxx-large;
     }
 
     #header-wrapper {
