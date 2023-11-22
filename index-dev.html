@@ -167,6 +167,10 @@
             line-height: normal;
         }
 
+        .section-droite>p {
+            white-space: pre-line;
+        }
+
         span {
             color: #FF5959;
             font-family: Montserrat;
@@ -301,6 +305,13 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            color: #FFF;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
         }
 
         footer>div:first-child {
@@ -312,6 +323,81 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        .a-propos-titre {
+            margin-bottom: 10px;
+            color: white;
+            font-size: 30px;
+            font-family: Montserrat;
+            font-weight: 900;
+            word-wrap: break-word;
+        }
+
+        .a-propos-titre>span {
+            color: #FF5959;
+            font-size: 30px;
+            font-family: Montserrat;
+            font-weight: 900;
+            word-wrap: "break-word";
+        }
+
+        .a-propos>h2:first-of-type {
+            margin: 10px 0;
+            color: #FF5959;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+
+        .footer-effect {
+            width: 82px;
+            height: 0px;
+            border: 1px #FF5959 solid;
+            margin-bottom: 10px;
+        }
+
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+            width: 70%;
+            text-align: left;
+        }
+
+        .footer-contact div {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .footer-contact>div p {
+            padding-left: 14px;
+        }
+
+        .mentions-legales>div:first-child {
+            text-align: center;
+            color: white;
+            font-size: 17px;
+            font-family: Montserrat;
+            font-weight: 700;
+            word-wrap: break-word;
+            text-decoration: underline;
+        }
+
+        .mentions-legales>div:last-child {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.50);
+            font-size: 12px;
+            font-family: Montserrat;
+            font-weight: 600;
+            word-wrap: break-word;
+            white-space: pre-line;
         }
     </style>
 </head>
@@ -359,13 +445,14 @@
                     <div class="effet"></div>
                 </div>
                 <p>
-                    Nunc vero inanes flatus quorundam vile esse quicquid extra urbis pomerium
-                    nascitur<br />aestimant<br />praeter orbos et caelibes, nec credi potest qua obsequiorum diversitate
-                    coluntur homines<br />sine<br />liberis Romae.<br /><br />Siquis enim militarium vel honoratorum aut
-                    nobilis inter suos rumore tenus esset<br />insimulatus<br />fovisse partes hostiles, iniecto onere
-                    catenarum in modum beluae trahebatur et inimico<br />urgente<br />vel nullo, quasi sufficiente hoc
-                    solo, quod nominatus esset aut delatus aut postulatus,<br />capite<br />vel multatione bonorum aut
-                    insulari solitudine damnabatur.
+                    Bienvenue chez Ascenta Concept, une écurie scolaire passionnée par l’innovation, l’éducation STEM et
+                    la compétition F1 in School. Nous vous invitons à rejoindre notre aventure éducative excitante et à
+                    devenir un partenaire clé de notre succès. <br>
+
+                    Ascenta concept est une écurie de Formule 1 miniaturisée participante au concours F1 In School.
+                    Notre écurie est composée d'étudiants passionnées qui veulent par la suite se faire une identité
+                    ainsi qu'un réseau dans ce monde du sport automobile.
+                    c'est la base qu'a écrit mon associé pour la présentation de notre dossier sponsoring
                 </p>
 
                 <a href="#" class="button" style="margin-top: 30px;">Découvrir l’équipe</a>
@@ -438,12 +525,9 @@
 
     <footer>
         <div>
-            <div>
-                <div><span
-                        style="color: #FF5959; font-size: 30px; font-family: Montserrat; font-weight: 900; word-wrap: break-word">I</span><span
-                        style="color: white; font-size: 30px; font-family: Montserrat; font-weight: 900; word-wrap: break-word">nformations</span>
-                </div>
-                <div style="width: 82px; height: 0px; border: 1px #FF5959 solid"></div>
+            <div class="a-propos">
+                <div class="a-propos-titre"><span>I</span>nformations</div>
+                <div class="footer-effect"></div>
 
                 <h2>À propos de nous</h2>
                 <h2>Competition F1 : participation</h2>
@@ -455,13 +539,10 @@
                 </div>
             </div>
             <div>
-                <div><span
-                        style="color: #FF5959; font-size: 30px; font-family: Montserrat; font-weight: 900; word-wrap: break-word">C</span><span
-                        style="color: white; font-size: 30px; font-family: Montserrat; font-weight: 900; word-wrap: break-word">ontact</span>
-                </div>
-                <div style="width: 82px; height: 0px; border: 1px #FF5959 solid"></div>
+                <div class="a-propos-titre"><span>C</span>ontact</div>
+                <div class="footer-effect"></div>
 
-                <div>
+                <div class="footer-contact">
                     <div>
                         <i>Tel</i>
                         <p>+33 66 66 77 78</p>
@@ -481,12 +562,11 @@
         </div>
 
         <div class="mentions-legales">
-            <div
-                style="text-align: center; color: white; font-size: 17px; font-family: Montserrat; font-weight: 700; text-decoration: underline; word-wrap: break-word">
+            <div>
                 Mentions légales</div>
-            <div
-                style="text-align: center; color: rgba(255, 255, 255, 0.50); font-size: 12px; font-family: Montserrat; font-weight: 600; word-wrap: break-word">
-                Design par Arnaud Graciet.<br />Développement par Khaled Alkardosh.</div>
+            <div>
+                Design par Arnaud Graciet.
+                Développement par Khaled Alkardosh.</div>
         </div>
     </footer>
 
