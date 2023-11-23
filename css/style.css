@@ -334,6 +334,7 @@ footer {
     font-weight: 600;
     line-height: normal;
     margin-top: 50px;
+    padding-top: 30px;
 }
 
 footer>div:first-child {
