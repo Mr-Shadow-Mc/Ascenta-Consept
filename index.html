@@ -7,41 +7,44 @@
     <title>La truite</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/620fc58eba.js" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-
-    <!---->
     <div id="intro">
         <img src="./assets/images/Logo_site_main.png" alt="logo" id="intro-logo">
     </div>
 
     <header class="global-header">
-        <div id="header-wrapper" class="">
+        <div id="header-wrapper">
             <div class="left-panel">
-                <!--<img src="./assets/images/humbergeur_menu.png" alt="" style="height: 40px;">-->
+                <a href="./index.html"><img src="./assets/images/Logo_site_main.png" alt=""></a>
             </div>
-            <div class="middle-panel"><a href="./index.html"><img src="./assets/images/Logo_site_main.png" alt=""></a>
+            <div class="right-panel">
+                <i class="fa-solid fa-bars" style="color: #FF5959;"></i>
+                <nav>
+                    <a href="./index.html">Accueil</a>
+                    <a href="./index.html#a-propos">à propos</a>
+                    <a href="./index.html#visuel">Visuels</a>
+                    <a href="./index.html#membre-equipe">Équipe</a>
+                    <a href="./index.html#infos-footer">Contact</a>
+                </nav>
             </div>
-            <div class="right-panel"></div>
         </div>
     </header>
 
-    <div class="scroll-control">
-        <span class="one">1</span>
-        <span class="two">2</span>
-        <span class="three">3</span>
-    </div>
-
     <main>
+
         <div class="scroll s-one" data-section-name="s-one">
             <div class="container">
                 <div class="row">
-
                     <!-- Swiper -->
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
@@ -62,42 +65,52 @@
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
-                        <div class="autoplay-progress">
-                            <svg viewBox="0 0 48 48">
-                                <circle cx="24" cy="24" r="20"></circle>
-                            </svg>
-                            <span></span>
-                        </div>
                     </div>
+                    <div class="home-text">
+                        <h2>“Le début d’une nouvelle ère”</h2>
+                        <a href="#" class="button">En savoir plus</a>
+                    </div>
+                    <div class="home-bg-effet"></div>
                 </div>
             </div>
         </div>
 
+
         <div class="scroll s-two" data-section-name="s-two">
             <div class="container">
                 <div class="row">
-                    <div class="presentation-projet">
-                        <div class="section-gauche">
+                    <div class="projet" id="a-propos">
 
+                        <div class="section-gauche">
+                            <div>
+
+                            </div>
                         </div>
                         <div class="section-droite">
-                            <h2>Notre projet</h2>
+                            <div>
+                                <h1><span class="span-effect">N</span>otre <span class="span-effect">P</span>rojet</h1>
+                                <div class="effet"></div>
+                            </div>
                             <p>
-                                Nunc vero inanes flatus quorundam vile esse quicquid extra urbis pomerium nascitur
-                                aestimant
-                                praeter orbos et caelibes, nec credi potest qua obsequiorum diversitate coluntur homines
-                                sine
-                                liberis Romae.
+                                Bienvenue chez Ascenta Concept, une écurie scolaire passionnée par l’innovation,
+                                l’éducation STEM et la compétition F1 in School.
 
-                                Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset
-                                insimulatus
-                                fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico
-                                urgente
-                                vel nullo, quasi sufficiente hoc solo, quod nominatus esset aut delatus aut postulatus,
-                                capite
-                                vel multatione bonorum aut insulari solitudine damnabatur.</p>
+                                Nous vous invitons à rejoindre notre aventure éducative excitante et à devenir un
+                                partenaire clé de notre succès.
+
+                                Ascenta concept est une écurie de Formule 1 miniaturisée participante au concours F1 In
+                                School.
+
+                                Notre écurie est composée d'étudiants passionnées qui veulent par la suite se faire une
+                                identité ainsi qu'un réseau dans ce monde du sport automobile.
+                            </p>
+
+                            <a href="#membre-equipe" class="button" style="margin-top: 30px;">Découvrir l’équipe</a>
+
                         </div>
+
                     </div>
+
                 </div>
             </div>
         </div>
@@ -105,64 +118,125 @@
         <div class="scroll s-three" data-section-name="s-three">
             <div class="container">
                 <div class="row">
-                    <div class="presentation-equipe">
+                    <div class="visuel-projet" id="visuel">
                         <div>
-                            <h1>Notre Équipe</h1>
+                            <div>
+                                <h1><span class="span-effect">V</span>isuelle du <span class="span-effect">P</span>rojet
+                                </h1>
+                                <div class="effet"></div>
+                            </div>
+                            <div class="projet-card">
+                                <div><img style="width: 100%; height: 100%; border-radius: 22px"
+                                        src="./assets/images/Illustration.png" alt="visuel-projet-1"></div>
+                                <div><img style="width: 100%; height: 100%; border-radius: 22px"
+                                        src="./assets/images/Illustration.png" alt="visuel-projet-2"></div>
+                                <div><img style="width: 100%; height: 100%; border-radius: 22px"
+                                        src="./assets/images/Illustration.png" alt="visuel-projet-3"></div>
+                                <div><img style="width: 100%; height: 100%; border-radius: 22px"
+                                        src="./assets/images/Illustration.png" alt="visuel-projet-4"></div>
+                            </div>
+                            <a href="#" class="button">Découvrir</a>
                         </div>
-                        <div class="membre-wrapper">
 
-                            <div class="membre">
-                                <h2>Nom membre</h2>
-                                <h3>Role</h3>
-                            </div>
+                        <div class="notre-equipe" id="membre-equipe">
+                            <div class="equipe-wrapper">
+                                <div>
+                                    <h1><span class="span-effect">N</span>otre <span class="span-effect">É</span>quipe
+                                    </h1>
+                                    <div class="effet" style="width: 50%;"></div>
+                                    <p>"Ascenta Concept, que la vitesse monte en flèche"</p>
+                                </div>
+                                <div class="membre">
+                                    <div>
+                                        <div class="membre-info">
+                                            <h3><span class="span-effect">A</span>dam <span
+                                                    class="span-effect">R</span>obin</h3>
+                                            <p>Chargé de communication</p>
+                                        </div>
 
-                            <div class="membre">
-                                <h2>Nom membre</h2>
-                                <h3>Role</h3>
-                            </div>
-
-                            <div class="membre">
-                                <h2>Nom membre</h2>
-                                <h3>Role</h3>
-                            </div>
-
-                            <div class="membre">
-                                <h2>Nom membre</h2>
-                                <h3>Role</h3>
+                                        <img style="border-radius: 22px" src="https://via.placeholder.com/271x219" alt="Adam ROBIN">
+                                    </div>
+                                    <div>
+                                        <div class="membre-info">
+                                            <h3><span class="span-effect">E</span>nzo
+                                                <span class="span-effect">C</span>orbet</h3>
+                                            <p>Concepteur 3D</p>
+                                        </div>
+                                        <img style="border-radius: 22px" src="https://via.placeholder.com/271x219" alt="Enzo CORBET">
+                                    </div>
+                                    <div>
+                                        <div class="membre-info">
+                                            <h3><span class="span-effect">N</span>oa <span
+                                                    class="span-effect">L</span>asseu</h3>
+                                            <p>Designer</p>
+                                        </div>
+                                        <img style="border-radius: 22px" src="https://via.placeholder.com/271x219" alt="Noa LASSEU">
+                                    </div>
+                                    <div>
+                                        <div class="membre-info">
+                                            <h3><span class="span-effect">Y</span>oni <span
+                                                    class="span-effect">G</span>iraudet</h3>
+                                            <p>assistant général</p>
+                                        </div>
+                                        <img style="border-radius: 22px" src="https://via.placeholder.com/271x219" alt="Yoni GIRAUDET">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+
     </main>
 
-    <footer>
-        <div class="ressources">
-            <span>Informations</span>
-            <ul>
-                <li>Contactez-nous</li>
-                <li>À propos de nous</li>
-                <li>Security</li>
-            </ul>
-        </div>
-        <div class="reseaux-sociaux">
-            <div class="reseau">
-                <a href="https://instagram.com/ascentaconcept?igshid=OGQ5ZDc2ODk2ZA=="> <i
-                        class="fa-brands fa-instagram"></i> Intagram</a>
+    <footer id="infos-footer">
+        <div>
+            <div class="a-propos">
+                <div class="a-propos-titre"><span>I</span>nformations</div>
+                <div class="footer-effect"></div>
+
+                <h2>À propos de nous</h2>
+                <h2>Competition F1 : participation</h2>
+
+                <div>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                </div>
             </div>
-            <div class="reseau">
-                <a href=""> <i class="fa-brands fa-x-twitter"></i> Twitter</a>
+            <div>
+                <div class="a-propos-titre"><span>C</span>ontact</div>
+                <div class="footer-effect"></div>
+
+                <div class="footer-contact">
+                    <div>
+                        <i class="fa-solid fa-phone" style="color: #FF5959;"></i>
+                        <p>+33 66 66 77 78</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-envelope" style="color: #FF5959;"></i>
+                        <p>test@test.test</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-location-dot" style="color: #FF5959;"></i>
+                        <p>2 lot. de la croix lanauve,
+                            16000 Angoulême</p>
+                    </div>
+                </div>
+
             </div>
-            <div class="reseau">
-                <a href="https://www.tiktok.com/@ascenta.concept?_t=8hOLUxdzRVB&_r=1"> <i
-                        class="fa-brands fa-tiktok"></i> TikTok</a>
-            </div>
-        </div>
-        <div id="copyright">
-            <p>This web site was made by the Ascenta Concept group 2023, all right reserved.</p>
         </div>
 
+        <div class="mentions-legales">
+            <div>
+                Mentions légales</div>
+            <div>
+                Design par Arnaud Graciet.
+                Développement par Khaled Alkardosh.</div>
+        </div>
     </footer>
 
 
