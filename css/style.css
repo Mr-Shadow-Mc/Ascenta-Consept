@@ -576,6 +576,9 @@ footer>div:first-child>div {
 
     footer>div:first-child>div {
         margin: 20px 0;
+    }
 
+    .section-droite>div:first-child h1 {
+        font-size: x-large;
     }
 }
