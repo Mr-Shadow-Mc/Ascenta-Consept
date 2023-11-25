@@ -1,4 +1,3 @@
-/*INTRO TRANSITION*/
 
 #intro {
     transition: opacity 5s;
@@ -82,6 +81,15 @@
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.home_video {
+    min-width: 100%;
+    min-height: 100%;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .home-text h2 {
@@ -231,6 +239,7 @@
 
 .visuel-projet>div:first-child>div:first-child>h1 {
     margin-bottom: 10px;
+    font-size: xx-large;
 }
 
 .visuel-projet>div:first-child>div:first-child>div:last-child {
@@ -306,13 +315,14 @@
 
 .equipe-wrapper>div>h1 {
     margin-bottom: 10px;
+    font-size: xx-large;
 }
 
 .equipe-wrapper>div>p {
     margin-top: 10px;
     margin-bottom: 30px;
     color: #FF5959;
-    font-size: 24px;
+    font-size: x-large;
     font-family: Montserrat;
     font-style: italic;
     font-weight: 400;
@@ -582,6 +592,20 @@ footer>div:first-child>div {
     }
 
     .section-droite>div:first-child h1 {
-        font-size: x-large;
+        font-size: xx-large;
+        margin-bottom: 10px;
+    }
+
+    .section-droite>div:first-child {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 30px;
+        flex-direction: column;
+    }
+
+    .section-droite > p {
+        white-space: pre-line;
+        text-align: center;
     }
 }
