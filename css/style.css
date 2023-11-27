@@ -295,7 +295,7 @@
     justify-content: flex-end;
 }
 
-.photo-membre{
+.photo-membre {
     width: 271px;
     height: 219px;
     border-radius: 22px;
@@ -575,18 +575,16 @@ footer>div:first-child>div {
         flex-direction: column;
     }
 
-    .section-droite > p {
+    .section-droite>p {
         white-space: pre-line;
         text-align: center;
     }
 
-    #a-propos
-    {
+    #a-propos {
         padding-top: 64px;
     }
 
-    .home-bg-effet
-    {
+    .home-bg-effet {
         height: 40%;
     }
 }
