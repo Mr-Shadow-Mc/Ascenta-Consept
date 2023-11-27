@@ -327,7 +327,8 @@
     font-family: Montserrat;
     font-style: italic;
     font-weight: 400;
-    word-wrap: break-word
+    word-wrap: break-word;
+    padding: 0 2px;
 }
 
 .equipe-wrapper>div .effet {
@@ -608,5 +609,15 @@ footer>div:first-child>div {
     .section-droite > p {
         white-space: pre-line;
         text-align: center;
+    }
+
+    #a-propos
+    {
+        padding-top: 64px;
+    }
+
+    .home-bg-effet
+    {
+        height: 40%;
     }
 }
