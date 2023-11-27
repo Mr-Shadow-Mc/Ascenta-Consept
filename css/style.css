@@ -295,9 +295,13 @@
     justify-content: flex-end;
 }
 
-.membre>div>img {
+.photo-membre{
     width: 271px;
     height: 219px;
+    border-radius: 22px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .membre-info {
