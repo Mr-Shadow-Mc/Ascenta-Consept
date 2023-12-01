@@ -25,6 +25,11 @@
     font-family: 'Montserrat';
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 #header-wrapper {
     height: 64px;
     width: 100%;
@@ -60,6 +65,52 @@
 .left-panel>a>img {
     height: 45px;
 }
+
+#mobile_header {
+    background-color: black;
+    color: white;
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+#mobile_header>div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#btn_close_mobile_header {
+    color: red;
+    align-self: end;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: xx-large;
+}
+
+#mobile_header>div:first-child>nav {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mobile_header>div:first-child>nav a {
+    margin: 10px 0;
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
 
 /*  ACCEUIL */
 .acceuil {
@@ -534,7 +585,7 @@ footer>div:first-child>div {
 
     .right-panel>i {
         display: contents;
-        font-size: xxx-large;
+        font-size: xx-large;
     }
 
     #header-wrapper {

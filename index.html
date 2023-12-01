@@ -29,7 +29,7 @@
                 <a href="./index.html"><img src="./assets/images/Logo_site_main.png" alt="logo_ascenta"></a>
             </div>
             <div class="right-panel">
-                <i class="fa-solid fa-bars" style="color: #FF5959;"></i>
+                <i class="fa-solid fa-bars" style="color: #FF5959;" id="btn_mobile_header"></i>
                 <nav>
                     <a href="./index.html">Accueil</a>
                     <a href="./index.html#a-propos">à propos</a>
@@ -40,6 +40,22 @@
             </div>
         </div>
     </header>
+
+    <div id="mobile_header">
+        
+        <div>
+
+            <i class="fa-solid fa-xmark" id="btn_close_mobile_header"></i>
+
+            <nav>
+                <a href="./index.html">Accueil</a>
+                <a href="./index.html#a-propos">à propos</a>
+                <a href="./index.html#visuel">Visuels</a>
+                <a href="./index.html#visuel">Équipe</a>
+                <a href="./index.html#infos-footer">Contact</a>
+            </nav>
+        </div>
+    </div>
 
     <main>
 
@@ -208,9 +224,11 @@
                 <h2>Competition F1 : participation</h2>
 
                 <div>
-                    <a href="https://instagram.com/ascentaconcept?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://instagram.com/ascentaconcept?igshid=OGQ5ZDc2ODk2ZA=="><i
+                            class="fa-brands fa-instagram"></i></a>
                     <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://www.tiktok.com/@ascenta.concept?_t=8hOLUxdzRVB&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.tiktok.com/@ascenta.concept?_t=8hOLUxdzRVB&_r=1"><i
+                            class="fa-brands fa-tiktok"></i></a>
                 </div>
             </div>
             <div>
@@ -224,7 +242,7 @@
                     </div>
                     <div>
                         <i class="fa-solid fa-envelope" style="color: #FF5959;"></i>
-                        <p>ascenta.concept1@gmail.com</p>
+                        <p style="font-size: min(20px, 1vw);">ascenta.concept01@gmail.com</p>
                     </div>
                     <div>
                         <i class="fa-solid fa-location-dot" style="color: #FF5959;"></i>
@@ -254,9 +272,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/scroll-section.js"></script>
 
-    <!--    SWIPPER JS SCRIPT-->
+    <!--    SWIPPER JS SCRIPT   -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.4/swiper-bundle.min.js"></script>
     <script src="./js/swipper.js"></script>
+
+    <!--    MOBILE INTEGRATION  -->
+    <script src="./js/header-mobile.js"></script>
 
 </body>
 
