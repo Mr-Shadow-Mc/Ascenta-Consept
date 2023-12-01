@@ -76,6 +76,9 @@ body {
     right: 0;
     top: 0;
     z-index: 100;
+    animation-name: header_show;
+    animation-duration: 1s;
+    transition: display 1s;
 }
 
 #mobile_header>div:first-child {
@@ -109,6 +112,26 @@ body {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
+}
+
+@keyframes header_show {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes header_hide {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(-100%);
+    }
 }
 
 
