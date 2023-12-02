@@ -271,6 +271,7 @@ body {
 
 .section-droite>p {
     white-space: pre-line;
+    font-size: large;
 }
 
 .span-effect {
@@ -307,6 +308,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
 }
 
 .visuel-projet>div:first-child>div:first-child>h1 {
@@ -394,7 +396,7 @@ body {
     font-size: xx-large;
 }
 
-.equipe-wrapper>div>p {
+.equipe-wrapper>div:first-child>p {
     margin-top: 10px;
     margin-bottom: 30px;
     color: #FF5959;
