@@ -308,7 +308,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
 }
 
 .visuel-projet>div:first-child>div:first-child>h1 {
@@ -337,6 +336,11 @@ body {
 }
 
 /*   NOTRE-EQUIPE   */
+.notre-equipe
+{
+    height: 100vh;
+    width: 100vw;
+}
 .notre-equipe>div:first-child {
     margin-top: 70px;
     display: flex;
@@ -510,7 +514,7 @@ footer>div:first-child>div {
     padding-left: 14px;
 }
 
-.mentions-legales>div:first-child {
+#mentions-legales>div:first-child {
     text-align: center;
     color: white;
     font-size: 17px;
@@ -520,7 +524,7 @@ footer>div:first-child>div {
     text-decoration: underline;
 }
 
-.mentions-legales>div:last-child {
+#mentions-legales>div:last-child {
     text-align: center;
     color: rgba(255, 255, 255, 0.50);
     font-size: 12px;
