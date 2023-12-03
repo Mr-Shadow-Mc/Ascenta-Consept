@@ -35,7 +35,7 @@ body {
     width: 100%;
     display: flex;
     position: fixed;
-    background-color: rgba(0, 0, 0, .45);
+    background-color: rgba(0, 0, 0, .65);
     backdrop-filter: blur(46px);
     top: 0;
     left: 0;
@@ -336,11 +336,15 @@ body {
 }
 
 /*   NOTRE-EQUIPE   */
-.notre-equipe
-{
+.notre-equipe {
     height: 100vh;
     width: 100vw;
 }
+
+#notre-equipe-home {
+    height: 70vh;
+}
+
 .notre-equipe>div:first-child {
     margin-top: 70px;
     display: flex;
@@ -361,6 +365,24 @@ body {
     width: 100%;
     height: 100%;
     flex-wrap: wrap;
+}
+
+.membre>img:first-child {
+    display: inline-block;
+    width: 31.25rem;
+    border-radius: 22px;
+    margin-right: 30px;
+}
+
+.membre>p:nth-child(2) {
+    display: inline-block;
+    width: 35%;
+    overflow-wrap: break-word;
+    font-size: large;
+    padding: 20px;
+    text-align: left;
+    height: 100%;
+    white-space: pre-line;
 }
 
 .membre>div {
@@ -410,6 +432,7 @@ body {
     font-weight: 400;
     word-wrap: break-word;
     padding: 0 2px;
+    text-align: center;
 }
 
 .equipe-wrapper>div .effet {
@@ -667,5 +690,23 @@ footer>div:first-child>div {
 
     .home-bg-effet {
         height: 40%;
+    }
+
+    .notre-equipe {
+        height: max-content;
+    }
+
+    #notre-equipe-home {
+        height: max-content;
+    }
+
+    .membre>p:nth-child(2) {
+        width: 100%;
+        text-align: center;
+    }
+
+    .membre>img:first-child {
+        width: 22rem;
+        margin: 0;
     }
 }

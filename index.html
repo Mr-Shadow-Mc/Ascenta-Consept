@@ -18,7 +18,6 @@
         rel="stylesheet">
 </head>
 <!--                            TO-DO LIST                          -->
-<!--    Download low videos quality for mobile devices              -->
 <!--    Update member section CSS to mobile devices                 -->
 <!--    Fixe scrolling to footer problems in all devices            -->
 
@@ -67,20 +66,20 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <video autoplay loop="loop" muted controls webkit-playsinline playsinlin
-                                    class="home_video">
-                                    <source src="./assets/videos/home_1.mp4" type="video/mp4">
+                                    class="home_video" id="home_video_1">
+                                    
                                 </video>
                             </div>
                             <div class="swiper-slide">
                                 <video autoplay loop="loop" muted controls webkit-playsinline playsinlin
-                                    class="home_video">
-                                    <source src="./assets/videos/home_2.mp4" type="video/mp4">
+                                    class="home_video" id="home_video_2">
+                                    
                                 </video>
                             </div>
                             <div class="swiper-slide">
                                 <video autoplay loop="loop" muted controls webkit-playsinline playsinlin
-                                    class="home_video">
-                                    <source src="./assets/videos/home_3.mp4" type="video/mp4">
+                                    class="home_video" id="home_video_3">
+                                   
                                 </video>
                             </div>
                         </div>
@@ -156,7 +155,7 @@
                             <a href="#" class="button">Découvrir</a>
                         </div>
                     </div>
-                    <div class="notre-equipe" style="height: 70vh;">
+                    <div class="notre-equipe">
                         <div class="equipe-wrapper">
                             <div>
                                 <h1><span class="span-effect">N</span>otre <span class="span-effect">É</span>quipe
@@ -165,8 +164,8 @@
                                 <p>"Ascenta Concept, que la vitesse monte en flèche"</p>
                             </div>
                             <div class="membre" style="justify-content: center; align-items: flex-start; margin: 20px 0;">
-                                <img src="./assets/images/IMG_20231126_221444_519.jpg" alt="Notre Equipe !"style="display: inline-block; width: 31.25rem; border-radius: 22px;margin-right: 30px;">
-                                <p style="display: inline-block; width: 35%; overflow-wrap: break-word; font-size: large; padding: 20px; text-align: left; height: 100%; white-space: pre-line;">
+                                <img src="./assets/images/IMG_20231126_221444_519.jpg" alt="Notre Equipe !">
+                                <p>
                                     Bienvenue chez Ascenta Concept, une écurie scolaire passionnée
                                     par l’innovation,
                                     l’éducation STEM et la compétition F1 in School.
@@ -255,6 +254,7 @@
 
     <!--    MOBILE INTEGRATION  -->
     <script src="./js/header-mobile.js"></script>
+    <script src="./js/video_checker.js"></script>
 
 </body>
 
