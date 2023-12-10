@@ -411,6 +411,7 @@ body {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .membre-info span {
